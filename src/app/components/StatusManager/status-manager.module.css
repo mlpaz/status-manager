@@ -1,0 +1,51 @@
+.box {
+  @apply flex border-solid  rounded-lg w-[20%];
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.card {
+  @apply flex border-solid  m-2  text-black rounded-md p-2 text-center text-sm w-full justify-between bg-white;
+}
+
+.wrapper {
+  @apply flex h-full mt-4 justify-center;
+  gap: 16px;
+}
+
+.boxTitle {
+  @apply mt-2 text-center rounded-md px-2;
+}
+
+.frozenBg {
+  @apply bg-sky-200;
+}
+
+.frozenTitle {
+  @apply text-sky-600;
+}
+
+.pendingBg {
+  @apply bg-gray-200;
+}
+
+.pendingTitle {
+  @apply text-gray-700;
+}
+
+.inProgressBg {
+  @apply bg-yellow-100;
+}
+
+.inProgressTitle {
+  @apply text-yellow-700;
+}
+
+.doneBg {
+  @apply bg-green-100;
+}
+
+.doneTitle {
+  @apply text-green-700;
+}
