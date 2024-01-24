@@ -7,25 +7,16 @@ import { statusMap } from "../constants";
 
 export default function Column({
   status,
-  refMap,
-  draggingStatus,
   title,
   children,
 }: {
   status: Status;
-  refMap: Map<Status, any>;
-  draggingStatus: Status | undefined;
   title: string;
   children: React.ReactNode;
 }) {
   return (
     <div
-      className={classNames(
-        styles.box,
-        styles[`${statusMap.get(status)}Bg`],
-        draggingStatus === status ? "ring-[3px] ring-blue-500" : ""
-      )}
-      ref={refMap.get(status)}
+      className={classNames(styles.box, styles[`${statusMap.get(status)}Bg`])}
     >
       <motion.h1
         layout="position"
