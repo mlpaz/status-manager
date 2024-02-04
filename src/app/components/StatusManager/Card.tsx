@@ -2,7 +2,6 @@
 import styles from "./status-manager.module.css";
 import { motion } from "framer-motion";
 import classNames from "classnames";
-import { useRef, useState } from "react";
 import { ICard, Status } from "./interfaces";
 import { X, ChevronRight, RefreshCcw } from "react-feather";
 
