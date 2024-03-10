@@ -1,4 +1,3 @@
-"use client";
 import styles from "./status-manager.module.css";
 import classNames from "classnames";
 import { Status } from "./interfaces";
